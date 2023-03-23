@@ -3,7 +3,9 @@ module github.com/arl-sh/kubevirt-usbdevice-hook
 go 1.20
 
 require (
+	github.com/clbanning/mxj v1.8.4
 	google.golang.org/grpc v1.54.0
+	kubevirt.io/api v0.59.0
 	kubevirt.io/client-go v0.59.0
 	kubevirt.io/kubevirt v0.59.0
 )
@@ -38,9 +40,6 @@ replace (
 	k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.23.5
 	k8s.io/sample-cli-plugin => k8s.io/sample-cli-plugin v0.23.5
 	k8s.io/sample-controller => k8s.io/sample-controller v0.23.5
-
-	kubevirt.io/api => kubevirt.io/api v0.59.0
-	kubevirt.io/client-go => kubevirt.io/client-go v0.59.0
 )
 
 require (
@@ -80,7 +79,6 @@ require (
 	k8s.io/client-go v12.0.0+incompatible // indirect
 	k8s.io/klog/v2 v2.90.1 // indirect
 	k8s.io/utils v0.0.0-20230313181309-38a27ef9d749 // indirect
-	kubevirt.io/api v0.59.0 // indirect
 	kubevirt.io/containerized-data-importer-api v1.56.0 // indirect
 	kubevirt.io/controller-lifecycle-operator-sdk/api v0.2.4 // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
